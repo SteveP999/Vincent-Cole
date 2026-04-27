@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vincent Cole — Big Band · American Standards · Swing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink:    #08070A;
+      --deep:   #0F0D12;
+      --mid:    #1A1720;
+      --gold:   #C8A050;
+      --gold-lt:#E2BE80;
+      --gold-dk:#9A7830;
+      --cream:  #EDE5D0;
+      --silver: #8A8070;
+      --white:  #F5EFE0;
+      --red:    #8B1A1A;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--ink);
+      color: var(--cream);
+      font-family: 'Jost', sans-serif;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    #topnav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 64px;
+      background: transparent; border-bottom: 1px solid transparent;
+      transition: background 0.4s, border-color 0.4s;
+    }
+    #topnav.scrolled {
+      background: rgba(8,7,10,0.94);
+      border-color: rgba(200,160,80,0.2);
+      backdrop-filter: blur(12px);
+    }
+    .nav-logo { height: 38px; width: auto; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--silver); text-decoration: none;
+      font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-lt); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; height: 100vh; min-height: 600px;
+      display: flex; align-items: flex-end; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: url('https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-black-suit-white-shirt-16x9-pic-1.png') center 20% / cover no-repeat;
+      filter: blur(2px) brightness(0.45) saturate(0.7);
+      transform: scale(1.05);
+    }
+    .hero-vignette {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(to bottom, rgba(8,7,10,0.5) 0%, rgba(8,7,10,0.05) 35%, rgba(8,7,10,0.75) 70%, rgba(8,7,10,0.99) 100%),
+        linear-gradient(to right, rgba(8,7,10,0.7) 0%, transparent 65%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      padding: 0 3.5rem 5.5rem; max-width: 580px;
+    }
+    .hero-eyebrow {
+      font-size: 0.58rem; letter-spacing: 0.35em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.2rem;
+    }
+    .hero-wordmark { margin-bottom: 1.6rem; }
+    .hero-wordmark img { height: 64px; width: auto; }
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      font-style: italic; color: var(--white); opacity: 0.85;
+      margin-bottom: 2rem; line-height: 1.6;
+    }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .cta-primary {
+      background: var(--gold); color: var(--ink); border: none;
+      padding: 0.75rem 2rem;
+      font-family: 'Jost', sans-serif; font-size: 0.62rem;
+      font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
+      cursor: pointer; transition: background 0.2s, transform 0.15s;
+    }
+    .cta-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
+    .cta-secondary {
+      background: transparent; color: var(--cream);
+      border: 1px solid rgba(200,160,80,0.4);
+      padding: 0.75rem 2rem; text-decoration: none; display: inline-block;
+      font-family: 'Jost', sans-serif; font-size: 0.62rem;
+      font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .cta-secondary:hover { border-color: var(--gold-lt); color: var(--gold-lt); }
+
+    /* ── ORNAMENT ── */
+    .ornament {
+      display: flex; align-items: center; gap: 1rem;
+      margin: 1.5rem 0 2.5rem;
+    }
+    .ornament-line { flex: 1; height: 1px; background: linear-gradient(to right, var(--gold), transparent); }
+    .ornament-diamond { width: 6px; height: 6px; background: var(--gold); transform: rotate(45deg); flex-shrink: 0; }
+
+    /* ── SECTION COMMON ── */
+    .section { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 0.58rem; letter-spacing: 0.32em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 400;
+      color: var(--white); line-height: 1.15; margin-bottom: 0.5rem;
+    }
+
+    /* ── LATEST SINGLE FEATURED ── */
+    #latest-single-featured {
+      background: var(--deep);
+      padding: 5rem 0;
+      border-top: 1px solid rgba(200,160,80,0.12);
+      position: relative; z-index: 1;
+    }
+    .latest-inner { max-width: 1060px; margin: 0 auto; padding: 0 2.5rem; }
+    .latest-header { text-align: center; margin-bottom: 3.5rem; }
+    .latest-header .eyebrow { display: block; margin-bottom: 0.75rem; }
+    .latest-title-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700;
+      letter-spacing: 0.04em; color: var(--white);
+    }
+    .latest-grid {
+      display: grid; grid-template-columns: 360px 1fr; gap: 4.5rem; align-items: center;
+    }
+    .latest-cover-wrap img {
+      width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
+      box-shadow: 0 0 80px rgba(200,160,80,0.2), 0 24px 64px rgba(0,0,0,0.85);
+    }
+    .latest-meta .badge {
+      display: inline-block;
+      font-size: 0.58rem; letter-spacing: 0.28em; text-transform: uppercase;
+      color: var(--gold); border: 1px solid rgba(200,160,80,0.4);
+      padding: 0.25rem 0.85rem; margin-bottom: 1.2rem;
+    }
+    .latest-meta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700;
+      line-height: 1.15; margin-bottom: 0.4rem; color: var(--white);
+    }
+    .latest-meta .artist-sub {
+      font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--silver); margin-bottom: 2rem;
+    }
+    .play-single-btn {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      background: transparent; color: var(--gold);
+      border: 1px solid rgba(200,160,80,0.45);
+      cursor: pointer; padding: 0.85rem 2rem;
+      font-family: 'Jost', sans-serif; font-size: 0.7rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      transition: background 0.2s, color 0.2s;
+    }
+    .play-single-btn:hover { background: var(--gold); color: var(--ink); }
+
+    /* ── YOUTUBE ── */
+    #youtube-section {
+      background: var(--ink);
+      padding: 5rem 0;
+      border-top: 1px solid rgba(200,160,80,0.1);
+    }
+    .yt-inner { max-width: 900px; margin: 0 auto; padding: 0 2.5rem; text-align: center; }
+    .yt-inner .eyebrow { margin-bottom: 0.75rem; }
+    .yt-inner .section-title { margin-bottom: 0.4rem; }
+    .yt-sub {
+      font-family: 'Playfair Display', serif; font-style: italic;
+      color: var(--silver); font-size: 1rem; margin-bottom: 2.5rem;
+    }
+    .yt-embed-wrap {
+      position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(200,160,80,0.15);
+    }
+    .yt-embed-wrap iframe {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+    }
+
+    /* ── ALBUM SECTION ── */
+    .album-section { background: var(--deep); }
+    .album-wrap { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
+    .album-layout { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
+    .album-cover-img { width: 100%; box-shadow: 0 12px 48px rgba(0,0,0,0.7); }
+    .album-meta { padding-top: 0.5rem; }
+    .album-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 400;
+      color: var(--white); letter-spacing: 0.04em; margin-bottom: 0.4rem;
+    }
+    .album-year { color: var(--silver); font-size: 0.72rem; letter-spacing: 0.2em; margin-bottom: 2rem; }
+
+    /* ── TRACK LIST ── */
+    .track-row {
+      display: flex; align-items: center; gap: 1rem;
+      padding: 0.65rem 0; border-bottom: 1px solid rgba(200,160,80,0.1);
+      cursor: pointer; transition: background 0.15s; border-radius: 4px;
+    }
+    .track-row:hover { background: rgba(200,160,80,0.06); }
+    .track-row.playing { background: rgba(200,160,80,0.1); }
+    .track-thumb { width: 46px; height: 46px; object-fit: cover; flex-shrink: 0; }
+    .track-info { flex: 1; min-width: 0; }
+    .track-num { color: var(--silver); font-size: 0.62rem; letter-spacing: 0.15em; margin-right: 0.6rem; }
+    .track-name { color: var(--cream); font-size: 0.9rem; }
+    .track-play-btn {
+      background: none; border: 1px solid rgba(200,160,80,0.35); color: var(--gold);
+      width: 32px; height: 32px; border-radius: 50%; cursor: pointer; flex-shrink: 0;
+      font-size: 0.6rem; display: flex; align-items: center; justify-content: center;
+      padding-left: 2px; transition: background 0.2s, color 0.2s;
+    }
+    .track-play-btn:hover, .track-row.playing .track-play-btn {
+      background: var(--gold); color: var(--ink);
+    }
+
+    /* ── ABOUT ── */
+    .about-section { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
+    .about-layout { display: grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: center; }
+    .about-text {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1rem, 1.8vw, 1.15rem);
+      color: var(--cream); opacity: 0.85; line-height: 1.95;
+    }
+    .about-photo { width: 100%; box-shadow: 0 12px 48px rgba(0,0,0,0.6); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center; padding: 2.5rem 2rem;
+      border-top: 1px solid rgba(200,160,80,0.12);
+      color: var(--silver); font-size: 0.68rem; letter-spacing: 0.12em;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+    footer a:hover { color: var(--gold-lt); }
+
+    /* ── PLAYER BAR ── */
+    #player-bar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: rgba(10,8,12,0.97); border-top: 1px solid rgba(200,160,80,0.18);
+      backdrop-filter: blur(16px); display: none;
+      padding: 0.75rem 2rem; align-items: center; gap: 1.5rem;
+    }
+    #player-bar.visible { display: flex; }
+    #pb-art { width: 44px; height: 44px; object-fit: cover; flex-shrink: 0; }
+    #pb-info { min-width: 0; flex: 0 0 180px; }
+    #pb-title { color: var(--white); font-size: 0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    #pb-album { color: var(--silver); font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; }
+    .pb-controls { display: flex; align-items: center; gap: 0.75rem; }
+    #pb-play {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--gold); border: none; color: var(--ink);
+      font-size: 0.85rem; cursor: pointer;
+      display: flex; align-items: center; justify-content: center; padding-left: 2px;
+      transition: background 0.2s;
+    }
+    #pb-play:hover { background: var(--gold-lt); }
+    .pb-skip { background: none; border: none; color: var(--silver); font-size: 0.7rem; cursor: pointer; transition: color 0.2s; }
+    .pb-skip:hover { color: var(--gold-lt); }
+    .pb-progress { flex: 1; display: flex; align-items: center; gap: 0.75rem; }
+    .pb-time { color: var(--silver); font-size: 0.7rem; flex-shrink: 0; }
+    .pb-bar { flex: 1; height: 3px; background: rgba(200,160,80,0.2); border-radius: 2px; cursor: pointer; position: relative; }
+    .pb-fill { height: 100%; background: var(--gold); border-radius: 2px; width: 0; transition: width 0.25s linear; }
+    .pb-vol { width: 80px; accent-color: var(--gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero-content { padding: 0 1.5rem 4rem; }
+      .section, .album-wrap, .about-section { padding: 4rem 1.5rem; }
+      .album-layout, .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+      .album-cover-img { max-width: 220px; }
+      .latest-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .latest-cover-wrap img { max-width: 280px; }
+      #topnav { padding: 0 1.25rem; }
+      .nav-links { gap: 1.2rem; }
+      #player-bar { padding: 0.6rem 1rem; gap: 0.75rem; }
+      #pb-info { flex: 0 0 120px; }
+      .pb-vol { display: none; }
+      .about-photo { order: -1; max-width: 280px; }
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PCFSEQJZ1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4PCFSEQJZ1');
+</script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="topnav">
+    <img class="nav-logo" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-logo-monogram-transparent.png" alt="Vincent Cole">
+    <ul class="nav-links">
+      <li><a href="#album">The Cole Standard</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://hellotexasrecords.com/" target="_blank">Label</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">Big Band &nbsp;·&nbsp; American Standards &nbsp;·&nbsp; Swing</div>
+      <div class="hero-wordmark">
+        <img src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-logo-signature-transparent.png" alt="Vincent Cole">
+      </div>
+      <p class="hero-tagline">The room goes quiet. The orchestra swells. Cole steps to the mic.</p>
+      <div class="hero-ctas">
+        <button class="cta-primary" onclick="document.getElementById('latest-single-featured').scrollIntoView({behavior:'smooth'})">Listen Now</button>
+        <a class="cta-secondary" href="https://hellotexasrecords.com/" target="_blank">Hello Texas Records</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LATEST SINGLE FEATURED -->
+  <section id="latest-single-featured">
+    <div class="latest-inner">
+      <div class="latest-header">
+        <span class="eyebrow">Latest Single</span>
+        <h2 class="latest-title-text" id="latest-title">Loading...</h2>
+        <div style="width:60px;height:1px;margin:1.2rem auto 0;background:var(--gold);"></div>
+      </div>
+      <div class="latest-grid">
+        <div class="latest-cover-wrap">
+          <img src="" alt="" id="latest-cover">
+        </div>
+        <div class="latest-meta">
+          <div class="badge">Latest Single</div>
+          <h2 id="latest-title-large">Loading...</h2>
+          <div class="artist-sub" id="latest-artist">Vincent Cole</div>
+          <button class="play-single-btn" id="latest-play">&#9654;&nbsp; Play Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section id="youtube-section">
+    <div class="yt-inner">
+      <span class="eyebrow">Official Music Video</span>
+      <h2 class="section-title">Last Call for Beautiful</h2>
+      <p class="yt-sub">Watch the official video</p>
+      <div class="yt-embed-wrap">
+        <iframe src="https://www.youtube.com/embed/ZFJsBPMDdR0" title="Vincent Cole — Last Call for Beautiful" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALBUM -->
+  <section class="album-section" id="album">
+    <div class="album-wrap">
+      <p class="eyebrow">Full Album</p>
+      <h2 class="section-title">The Cole Standard</h2>
+      <div class="ornament">
+        <div class="ornament-line"></div>
+        <div class="ornament-diamond"></div>
+        <div class="ornament-line" style="background:linear-gradient(to left,var(--gold),transparent);"></div>
+      </div>
+      <div class="album-layout">
+        <div>
+          <img class="album-cover-img" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-the-cole-standard-cover.png" alt="The Cole Standard">
+        </div>
+        <div class="album-meta">
+          <div class="album-name">The Cole Standard</div>
+          <div class="album-year">2025 &nbsp;·&nbsp; Big Band &nbsp;·&nbsp; American Standards</div>
+          <div class="track-list" id="track-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <p class="eyebrow">About the Artist</p>
+    <h2 class="section-title">Vincent Cole</h2>
+    <div class="ornament">
+      <div class="ornament-line"></div>
+      <div class="ornament-diamond"></div>
+      <div class="ornament-line" style="background:linear-gradient(to left,var(--gold),transparent);"></div>
+    </div>
+    <div class="about-layout">
+      <p class="about-text">
+        Vincent Cole inhabits a world where the orchestra never stops playing and the night never quite ends. Drawing from the golden age of American song — big band arrangements, lush strings, the smoky swagger of the supper club — Cole brings a voice that feels like a discovery and a memory at the same time. His debut record, <em>The Cole Standard</em>, is an invitation back to the room where the music was everything.
+        <br><br>
+        A Hello Texas Records artist.
+      </p>
+      <img class="about-photo" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-black-suit-white-shirt-1x1-pic-2.png" alt="Vincent Cole">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Vincent Cole &nbsp;·&nbsp; <a href="https://hellotexasrecords.com/" target="_blank">Hello Texas Records</a></p>
+  </footer>
+
+  <!-- PLAYER BAR -->
+  <div id="player-bar">
+    <img id="pb-art" src="" alt="">
+    <div id="pb-info">
+      <div id="pb-title">—</div>
+      <div id="pb-album">The Cole Standard</div>
+    </div>
+    <div class="pb-controls">
+      <button class="pb-skip" id="pb-prev">&#9664;&#9664;</button>
+      <button id="pb-play">&#9654;</button>
+      <button class="pb-skip" id="pb-next">&#9654;&#9654;</button>
+    </div>
+    <div class="pb-progress">
+      <span class="pb-time" id="pb-cur">0:00</span>
+      <div class="pb-bar" id="pb-bar"><div class="pb-fill" id="pb-fill"></div></div>
+      <span class="pb-time" id="pb-dur">0:00</span>
+    </div>
+    <input type="range" class="pb-vol" id="pb-vol" min="0" max="1" step="0.02" value="0.85">
+  </div>
+
+  <script>
+    let TRACKS = [];
+    let currentIdx = -1;
+    const aud = new Audio();
+    aud.volume = 0.85;
+
+    const pbBar    = document.getElementById('player-bar');
+    const pbPlay   = document.getElementById('pb-play');
+    const pbPrev   = document.getElementById('pb-prev');
+    const pbNext   = document.getElementById('pb-next');
+    const pbArt    = document.getElementById('pb-art');
+    const pbTitle  = document.getElementById('pb-title');
+    const pbAlbum  = document.getElementById('pb-album');
+    const pbCur    = document.getElementById('pb-cur');
+    const pbDur    = document.getElementById('pb-dur');
+    const pbFill   = document.getElementById('pb-fill');
+    const pbBarEl  = document.getElementById('pb-bar');
+    const pbVol    = document.getElementById('pb-vol');
+
+    function fmt(s) {
+      if (!isFinite(s)) return '0:00';
+      const m = Math.floor(s / 60), sec = Math.floor(s % 60);
+      return m + ':' + (sec < 10 ? '0' : '') + sec;
+    }
+
+    function hasAudio(track) {
+      return track && track.audio && track.audio.trim().length > 0;
+    }
+
+    function normalizeTrack(track, index) {
+      return {
+        id: track.id || String(index),
+        num: track.num || String(index + 1).padStart(2, '0'),
+        title: track.title || 'Untitled',
+        artist: track.artist || 'Vincent Cole',
+        album: track.album || 'The Cole Standard',
+        cover: track.cover || '',
+        audio: track.audio || '',
+        isLatest: !!track.isLatest,
+        type: track.type || 'Single'
+      };
+    }
+
+    function setLatest(track) {
+      document.getElementById('latest-title').textContent = track.title;
+      document.getElementById('latest-title-large').textContent = track.title;
+      document.getElementById('latest-artist').textContent = track.artist;
+      document.getElementById('latest-cover').src = track.cover;
+      document.getElementById('latest-cover').alt = track.title;
+
+      const latestPlay = document.getElementById('latest-play');
+      latestPlay.onclick = () => playTrack(TRACKS.indexOf(track));
+      latestPlay.disabled = !hasAudio(track);
+    }
+
+    function renderTracks() {
+      const list = document.getElementById('track-list');
+      list.innerHTML = TRACKS.map((track, index) => `
+        <div class="track-row" data-track-index="${index}">
+          <img class="track-thumb" src="${track.cover}" alt="${track.title}">
+          <div class="track-info">
+            <span class="track-num">${track.num}</span>
+            <span class="track-name">${track.title}${track.isLatest ? ' <span style="font-size:0.65em;color:var(--gold);letter-spacing:0.12em;">NEW</span>' : ''}</span>
+          </div>
+          <button class="track-play-btn" aria-label="Play ${track.title}" ${hasAudio(track) ? '' : 'disabled'}>&#9654;</button>
+        </div>
+      `).join('');
+
+      document.querySelectorAll('.track-row').forEach(row => {
+        row.addEventListener('click', () => {
+          playTrack(Number(row.dataset.trackIndex));
+        });
+      });
+    }
+
+    function playTrack(idx) {
+      if (idx < 0 || idx >= TRACKS.length) return;
+      const track = TRACKS[idx];
+      if (!hasAudio(track)) return;
+
+      currentIdx = idx;
+      aud.src = track.audio;
+      pbTitle.textContent = track.title;
+      pbAlbum.textContent = track.album;
+      pbArt.src = track.cover;
+      pbBar.classList.add('visible');
+
+      document.querySelectorAll('.track-row').forEach(r => r.classList.remove('playing'));
+      const row = document.querySelector(`[data-track-index="${idx}"]`);
+      if (row) row.classList.add('playing');
+
+      aud.play();
+      pbPlay.innerHTML = '&#10074;&#10074;';
+    }
+
+    async function loadSongs() {
+      try {
+        const response = await fetch('./songs.json?v=' + Date.now());
+        const rawTracks = await response.json();
+        TRACKS = rawTracks.map(normalizeTrack);
+
+        const latest = TRACKS.find(t => t.isLatest) || TRACKS[TRACKS.length - 1];
+
+        if (latest) setLatest(latest);
+        renderTracks();
+      } catch (error) {
+        console.error('Could not load songs.json', error);
+        document.getElementById('latest-title').textContent = 'Music catalog unavailable';
+        document.getElementById('track-list').innerHTML = '<p style="color:var(--silver)">Could not load songs.json.</p>';
+      }
+    }
+
+    pbPlay.addEventListener('click', () => {
+      if (currentIdx < 0) return playTrack(0);
+      if (aud.paused) {
+        aud.play();
+        pbPlay.innerHTML = '&#10074;&#10074;';
+      } else {
+        aud.pause();
+        pbPlay.innerHTML = '&#9654;';
+      }
+    });
+
+    pbPrev.addEventListener('click', () => {
+      for (let i = currentIdx - 1; i >= 0; i--) {
+        if (hasAudio(TRACKS[i])) return playTrack(i);
+      }
+    });
+
+    pbNext.addEventListener('click', () => {
+      for (let i = currentIdx + 1; i < TRACKS.length; i++) {
+        if (hasAudio(TRACKS[i])) return playTrack(i);
+      }
+    });
+
+    aud.addEventListener('timeupdate', () => {
+      pbCur.textContent = fmt(aud.currentTime);
+      pbDur.textContent = fmt(aud.duration);
+      pbFill.style.width = ((aud.currentTime / aud.duration) || 0) * 100 + '%';
+    });
+
+    aud.addEventListener('ended', () => {
+      pbNext.click();
+    });
+
+    pbBarEl.addEventListener('click', e => {
+      const rect = pbBarEl.getBoundingClientRect();
+      if (isFinite(aud.duration)) {
+        aud.currentTime = ((e.clientX - rect.left) / rect.width) * aud.duration;
+      }
+    });
+
+    pbVol.addEventListener('input', e => {
+      aud.volume = e.target.value;
+    });
+
+    window.addEventListener('scroll', () => {
+      document.getElementById('topnav').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    loadSongs();
+  </script>
+</body>
+</html>
