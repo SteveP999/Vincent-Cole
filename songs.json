@@ -1,0 +1,35 @@
+[
+  {
+    "id": "last_call_for_beautiful",
+    "num": "01",
+    "title": "Last Call for Beautiful",
+    "artist": "Vincent Cole",
+    "album": "The Cole Standard",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-last-call-for-beautiful-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/Vincent-Cole-Last-Call-For-Beautiful-Mastered-MP3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1"
+  },
+  {
+    "id": "trouble_in_a_black_dress",
+    "num": "02",
+    "title": "Trouble in a Black Dress",
+    "artist": "Vincent Cole",
+    "album": "The Cole Standard",
+    "type": "Single",
+    "isLatest": false,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-trouble-in-a-black-dress-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mastered-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1"
+  },
+  {
+    "id": "just_watch_me_walk_away",
+    "num": "03",
+    "title": "Just Watch Me Walk Away",
+    "artist": "Vincent Cole",
+    "album": "The Cole Standard",
+    "type": "Latest Single",
+    "isLatest": true,
+    "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-just-watch-me-walk-away-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mastered-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1"
+  }
+]
