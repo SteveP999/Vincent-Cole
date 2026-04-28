@@ -1,6 +1,10 @@
 {
-  "title": "The Last Song",
+  "title": "Just Watch Me Walk Away",
+  "artist": "Vincent Cole",
   "album": "The Cole Standard",
-  "image": "https://www.dropbox.com/scl/fi/vlreanqhhge4y07c5eao7/vincent-cole-the-last-song-cover.png?rlkey=t8j8vlhhvzke7bzp2rwypfrc3&st=0cfjnf98&raw=1",
-  "audio": "https://www.dropbox.com/scl/fi/mzrz0htmnr3rpkof2sadg/vincent-cole-the-last-song-mastered-mp3-v1.mp3?rlkey=vhgd3bjde2k1qli8lkmk07iq3&st=enh97ke4&raw=1"
+  "type": "Latest Single",
+  "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-just-watch-me-walk-away-cover.png",
+  "image": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-just-watch-me-walk-away-cover.png",
+  "audio": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1",
+  "audioSrc": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1"
 }
