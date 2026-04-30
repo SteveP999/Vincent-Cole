@@ -467,12 +467,12 @@
     function normalizeTrack(track, index) {
       return {
         id: track.id || String(index),
-        num: track.num || String(index + 1).padStart(2, '0'),
+        num: track.num || (track.track ? String(track.track).padStart(2, '0') : String(index + 1).padStart(2, '0')),
         title: track.title || 'Untitled',
         artist: track.artist || 'Vincent Cole',
         album: track.album || 'The Cole Standard',
         cover: track.cover || '',
-        audio: track.audio || '',
+        audio: track.audioSrc || track.audio || '',
         isLatest: !!track.isLatest,
         type: track.type || 'Single'
       };
