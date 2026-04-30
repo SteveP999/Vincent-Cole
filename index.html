@@ -55,6 +55,16 @@
       transition: color 0.2s;
     }
     .nav-links a:hover { color: var(--gold-lt); }
+    .nav-htr {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      color: var(--gold); text-decoration: none;
+      font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase;
+      border: 1px solid rgba(200,160,80,0.4);
+      padding: 0.4rem 1rem;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+    }
+    .nav-htr:hover { background: var(--gold); color: var(--ink); }
 
     /* ── HERO ── */
     .hero {
@@ -96,6 +106,7 @@
       font-family: 'Jost', sans-serif; font-size: 0.62rem;
       font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase;
       cursor: pointer; transition: background 0.2s, transform 0.15s;
+      text-decoration: none; display: inline-flex; align-items: center;
     }
     .cta-primary:hover { background: var(--gold-lt); transform: translateY(-1px); }
     .cta-secondary {
@@ -120,7 +131,7 @@
     .section { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
     .eyebrow {
       font-size: 0.58rem; letter-spacing: 0.32em; text-transform: uppercase;
-      color: var(--gold); margin-bottom: 0.6rem;
+      color: var(--gold); margin-bottom: 0.6rem; display: block;
     }
     .section-title {
       font-family: 'Playfair Display', serif;
@@ -128,23 +139,17 @@
       color: var(--white); line-height: 1.15; margin-bottom: 0.5rem;
     }
 
-    /* ── LATEST SINGLE FEATURED ── */
-    #latest-single-featured {
+    /* ── LATEST SINGLE ── */
+    #latest-section {
       background: var(--deep);
       padding: 5rem 0;
       border-top: 1px solid rgba(200,160,80,0.12);
-      position: relative; z-index: 1;
     }
     .latest-inner { max-width: 1060px; margin: 0 auto; padding: 0 2.5rem; }
     .latest-header { text-align: center; margin-bottom: 3.5rem; }
-    .latest-header .eyebrow { display: block; margin-bottom: 0.75rem; }
-    .latest-title-text {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700;
-      letter-spacing: 0.04em; color: var(--white);
-    }
+    .latest-header .eyebrow { margin-bottom: 0.75rem; }
     .latest-grid {
-      display: grid; grid-template-columns: 360px 1fr; gap: 4.5rem; align-items: center;
+      display: grid; grid-template-columns: 320px 1fr; gap: 4rem; align-items: center;
     }
     .latest-cover-wrap img {
       width: 100%; aspect-ratio: 1; object-fit: cover; display: block;
@@ -176,65 +181,113 @@
     }
     .play-single-btn:hover { background: var(--gold); color: var(--ink); }
 
-    /* ── YOUTUBE ── */
-    #youtube-section {
+    /* ── VIDEO ── */
+    #video-section {
       background: var(--ink);
       padding: 5rem 0;
       border-top: 1px solid rgba(200,160,80,0.1);
     }
-    .yt-inner { max-width: 900px; margin: 0 auto; padding: 0 2.5rem; text-align: center; }
-    .yt-inner .eyebrow { margin-bottom: 0.75rem; }
-    .yt-inner .section-title { margin-bottom: 0.4rem; }
-    .yt-sub {
+    .video-inner { max-width: 900px; margin: 0 auto; padding: 0 2.5rem; text-align: center; }
+    .video-inner .eyebrow { margin-bottom: 0.75rem; }
+    .video-inner .section-title { margin-bottom: 0.4rem; }
+    .video-sub {
       font-family: 'Playfair Display', serif; font-style: italic;
       color: var(--silver); font-size: 1rem; margin-bottom: 2.5rem;
     }
-    .yt-embed-wrap {
+    .video-embed-wrap {
       position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
       box-shadow: 0 24px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(200,160,80,0.15);
     }
-    .yt-embed-wrap iframe {
+    .video-embed-wrap iframe {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
     }
 
-    /* ── ALBUM SECTION ── */
-    .album-section { background: var(--deep); }
-    .album-wrap { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
-    .album-layout { display: grid; grid-template-columns: 280px 1fr; gap: 4rem; align-items: start; }
-    .album-cover-img { width: 100%; box-shadow: 0 12px 48px rgba(0,0,0,0.7); }
-    .album-meta { padding-top: 0.5rem; }
-    .album-name {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 3.5vw, 2.5rem); font-weight: 400;
-      color: var(--white); letter-spacing: 0.04em; margin-bottom: 0.4rem;
+    /* ── DISCOGRAPHY ── */
+    #discography-section {
+      background: var(--deep);
+      padding: 5rem 0;
+      border-top: 1px solid rgba(200,160,80,0.12);
     }
-    .album-year { color: var(--silver); font-size: 0.72rem; letter-spacing: 0.2em; margin-bottom: 2rem; }
+    .discography-inner { max-width: 1100px; margin: 0 auto; padding: 0 3.5rem; }
+    .discography-header { margin-bottom: 4rem; }
 
-    /* ── TRACK LIST ── */
-    .track-row {
-      display: flex; align-items: center; gap: 1rem;
-      padding: 0.65rem 0; border-bottom: 1px solid rgba(200,160,80,0.1);
-      cursor: pointer; transition: background 0.15s; border-radius: 4px;
+    /* Album block */
+    .album-block { margin-bottom: 5rem; }
+    .album-block:last-child { margin-bottom: 0; }
+    .album-header-strip {
+      display: flex; align-items: center; gap: 2.5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(200,160,80,0.15);
     }
-    .track-row:hover { background: rgba(200,160,80,0.06); }
-    .track-row.playing { background: rgba(200,160,80,0.1); }
-    .track-thumb { width: 46px; height: 46px; object-fit: cover; flex-shrink: 0; }
-    .track-info { flex: 1; min-width: 0; }
-    .track-num { color: var(--silver); font-size: 0.62rem; letter-spacing: 0.15em; margin-right: 0.6rem; }
-    .track-name { color: var(--cream); font-size: 0.9rem; }
-    .track-play-btn {
-      background: none; border: 1px solid rgba(200,160,80,0.35); color: var(--gold);
-      width: 32px; height: 32px; border-radius: 50%; cursor: pointer; flex-shrink: 0;
-      font-size: 0.6rem; display: flex; align-items: center; justify-content: center;
-      padding-left: 2px; transition: background 0.2s, color 0.2s;
+    .album-cover-sq {
+      width: 160px; height: 160px; object-fit: cover; flex-shrink: 0;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.7);
     }
-    .track-play-btn:hover, .track-row.playing .track-play-btn {
-      background: var(--gold); color: var(--ink);
+    .album-header-text .album-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400;
+      color: var(--white); margin: 0.4rem 0 0.3rem;
+    }
+    .album-header-text .album-sub {
+      color: var(--silver); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+    }
+
+    /* Song cover grid */
+    .song-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .song-card {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .song-card:hover { transform: translateY(-3px); }
+    .song-card.playing .song-img-wrap img {
+      box-shadow: 0 0 0 3px var(--gold), 0 8px 32px rgba(200,160,80,0.35);
+    }
+    .song-img-wrap {
+      position: relative; overflow: hidden; aspect-ratio: 1;
+    }
+    .song-img-wrap img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: opacity 0.2s;
+    }
+    .song-card:hover .song-img-wrap img { opacity: 0.75; }
+    .song-play-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity 0.2s;
+    }
+    .song-card:hover .song-play-overlay { opacity: 1; }
+    .song-card.playing .song-play-overlay { opacity: 1; }
+    .song-play-icon {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: rgba(200,160,80,0.9); color: var(--ink);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; padding-left: 3px;
+    }
+    .song-card.playing .song-play-icon {
+      background: var(--gold);
+    }
+    .song-card-num {
+      color: var(--silver); font-size: 0.6rem; letter-spacing: 0.18em;
+      text-transform: uppercase; margin-top: 0.75rem;
+    }
+    .song-card-title {
+      color: var(--cream); font-size: 0.88rem; line-height: 1.4;
+      margin-top: 0.25rem;
     }
 
     /* ── ABOUT ── */
-    .about-section { padding: 6rem 3.5rem; max-width: 1100px; margin: 0 auto; }
-    .about-layout { display: grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: center; }
+    #about-section {
+      background: var(--ink);
+      padding: 6rem 0;
+      border-top: 1px solid rgba(200,160,80,0.1);
+    }
+    .about-inner { max-width: 1100px; margin: 0 auto; padding: 0 3.5rem; }
+    .about-layout { display: grid; grid-template-columns: 1fr 340px; gap: 4rem; align-items: center; margin-top: 3rem; }
     .about-text {
       font-family: 'Playfair Display', serif;
       font-size: clamp(1rem, 1.8vw, 1.15rem);
@@ -281,43 +334,51 @@
     .pb-vol { width: 80px; accent-color: var(--gold); }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .song-grid { grid-template-columns: repeat(2, 1fr); }
+    }
     @media (max-width: 768px) {
       .hero-content { padding: 0 1.5rem 4rem; }
-      .section, .album-wrap, .about-section { padding: 4rem 1.5rem; }
-      .album-layout, .about-layout { grid-template-columns: 1fr; gap: 2rem; }
-      .album-cover-img { max-width: 220px; }
+      .discography-inner, .about-inner { padding: 0 1.5rem; }
       .latest-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .latest-cover-wrap img { max-width: 280px; }
+      .album-header-strip { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+      .album-cover-sq { width: 130px; height: 130px; }
+      .about-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .about-photo { order: -1; max-width: 280px; }
       #topnav { padding: 0 1.25rem; }
-      .nav-links { gap: 1.2rem; }
+      .nav-links { display: none; }
       #player-bar { padding: 0.6rem 1rem; gap: 0.75rem; }
       #pb-info { flex: 0 0 120px; }
       .pb-vol { display: none; }
-      .about-photo { order: -1; max-width: 280px; }
+    }
+    @media (max-width: 480px) {
+      .song-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
     }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PCFSEQJZ1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4PCFSEQJZ1');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PCFSEQJZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4PCFSEQJZ1');
+  </script>
 </head>
 <body>
 
-  <!-- NAV -->
+  <!-- 1. TOP NAV -->
   <nav id="topnav">
     <img class="nav-logo" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-logo-monogram-transparent.png" alt="Vincent Cole">
     <ul class="nav-links">
-      <li><a href="#album">The Cole Standard</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="https://hellotexasrecords.com/" target="_blank">Label</a></li>
+      <li><a href="#discography-section">Discography</a></li>
+      <li><a href="#video-section">Video</a></li>
+      <li><a href="#about-section">About</a></li>
     </ul>
+    <a class="nav-htr" href="https://hellotexasrecords.com/" target="_blank">&#8592; Hello Texas Records</a>
   </nav>
 
-  <!-- HERO -->
+  <!-- 2. HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-vignette"></div>
@@ -328,18 +389,18 @@
       </div>
       <p class="hero-tagline">The room goes quiet. The orchestra swells. Cole steps to the mic.</p>
       <div class="hero-ctas">
-        <button class="cta-primary" onclick="document.getElementById('latest-single-featured').scrollIntoView({behavior:'smooth'})">Listen Now</button>
-        <a class="cta-secondary" href="https://hellotexasrecords.com/" target="_blank">Hello Texas Records</a>
+        <button class="cta-primary" id="hero-play-btn">&#9654;&nbsp; Play Latest</button>
+        <a class="cta-secondary" href="#discography-section">Discography</a>
       </div>
     </div>
   </section>
 
-  <!-- LATEST SINGLE FEATURED -->
-  <section id="latest-single-featured">
+  <!-- 3. LATEST SINGLE -->
+  <section id="latest-section">
     <div class="latest-inner">
       <div class="latest-header">
         <span class="eyebrow">Latest Single</span>
-        <h2 class="latest-title-text" id="latest-title">Loading...</h2>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--white);" id="latest-title-top">Loading…</h2>
         <div style="width:60px;height:1px;margin:1.2rem auto 0;background:var(--gold);"></div>
       </div>
       <div class="latest-grid">
@@ -348,7 +409,7 @@
         </div>
         <div class="latest-meta">
           <div class="badge">Latest Single</div>
-          <h2 id="latest-title-large">Loading...</h2>
+          <h2 id="latest-title-large">Loading…</h2>
           <div class="artist-sub" id="latest-artist">Vincent Cole</div>
           <button class="play-single-btn" id="latest-play">&#9654;&nbsp; Play Now</button>
         </div>
@@ -356,57 +417,54 @@
     </div>
   </section>
 
-  <!-- YOUTUBE -->
-  <section id="youtube-section">
-    <div class="yt-inner">
+  <!-- 4. LATEST VIDEO -->
+  <section id="video-section">
+    <div class="video-inner">
       <span class="eyebrow">Official Music Video</span>
       <h2 class="section-title">Last Call for Beautiful</h2>
-      <p class="yt-sub">Watch the official video</p>
-      <div class="yt-embed-wrap">
+      <p class="video-sub">Watch the official video</p>
+      <div class="video-embed-wrap">
         <iframe src="https://www.youtube.com/embed/ZFJsBPMDdR0" title="Vincent Cole — Last Call for Beautiful" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
-  <!-- ALBUM -->
-  <section class="album-section" id="album">
-    <div class="album-wrap">
-      <p class="eyebrow">Full Album</p>
-      <h2 class="section-title">The Cole Standard</h2>
+  <!-- 5 & 6. DISCOGRAPHY + SONG COVERS -->
+  <section id="discography-section">
+    <div class="discography-inner">
+      <div class="discography-header">
+        <span class="eyebrow">Discography</span>
+        <h2 class="section-title">The Cole Standard</h2>
+        <div class="ornament">
+          <div class="ornament-line"></div>
+          <div class="ornament-diamond"></div>
+          <div class="ornament-line" style="background:linear-gradient(to left,var(--gold),transparent);"></div>
+        </div>
+      </div>
+      <div id="discography-albums">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 & 8. ABOUT + ARTIST PHOTOS -->
+  <section id="about-section">
+    <div class="about-inner">
+      <span class="eyebrow">About the Artist</span>
+      <h2 class="section-title">Vincent Cole</h2>
       <div class="ornament">
         <div class="ornament-line"></div>
         <div class="ornament-diamond"></div>
         <div class="ornament-line" style="background:linear-gradient(to left,var(--gold),transparent);"></div>
       </div>
-      <div class="album-layout">
-        <div>
-          <img class="album-cover-img" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-the-cole-standard-cover.png" alt="The Cole Standard">
-        </div>
-        <div class="album-meta">
-          <div class="album-name">The Cole Standard</div>
-          <div class="album-year">2025 &nbsp;·&nbsp; Big Band &nbsp;·&nbsp; American Standards</div>
-          <div class="track-list" id="track-list"></div>
-        </div>
+      <div class="about-layout">
+        <p class="about-text">
+          Vincent Cole inhabits a world where the orchestra never stops playing and the night never quite ends. Drawing from the golden age of American song — big band arrangements, lush strings, the smoky swagger of the supper club — Cole brings a voice that feels like a discovery and a memory at the same time. His debut record, <em>The Cole Standard</em>, is an invitation back to the room where the music was everything.
+          <br><br>
+          A Hello Texas Records artist.
+        </p>
+        <img class="about-photo" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-black-suit-white-shirt-1x1-pic-2.png" alt="Vincent Cole">
       </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about-section" id="about">
-    <p class="eyebrow">About the Artist</p>
-    <h2 class="section-title">Vincent Cole</h2>
-    <div class="ornament">
-      <div class="ornament-line"></div>
-      <div class="ornament-diamond"></div>
-      <div class="ornament-line" style="background:linear-gradient(to left,var(--gold),transparent);"></div>
-    </div>
-    <div class="about-layout">
-      <p class="about-text">
-        Vincent Cole inhabits a world where the orchestra never stops playing and the night never quite ends. Drawing from the golden age of American song — big band arrangements, lush strings, the smoky swagger of the supper club — Cole brings a voice that feels like a discovery and a memory at the same time. His debut record, <em>The Cole Standard</em>, is an invitation back to the room where the music was everything.
-        <br><br>
-        A Hello Texas Records artist.
-      </p>
-      <img class="about-photo" src="https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-black-suit-white-shirt-1x1-pic-2.png" alt="Vincent Cole">
     </div>
   </section>
 
@@ -415,7 +473,7 @@
     <p>&copy; 2025 Vincent Cole &nbsp;·&nbsp; <a href="https://hellotexasrecords.com/" target="_blank">Hello Texas Records</a></p>
   </footer>
 
-  <!-- PLAYER BAR -->
+  <!-- 9. BOTTOM PLAYER BAR -->
   <div id="player-bar">
     <img id="pb-art" src="" alt="">
     <div id="pb-info">
@@ -436,24 +494,36 @@
   </div>
 
   <script>
+    // ── Artist / album config ──────────────────────────────────────
+    const ALBUM_CONFIG = {
+      'The Cole Standard': {
+        cover: 'https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/vincent-cole-the-cole-standard-cover.png',
+        year: '2025',
+        genre: 'Big Band · American Standards'
+      }
+    };
+
+    // ── State ──────────────────────────────────────────────────────
     let TRACKS = [];
     let currentIdx = -1;
     const aud = new Audio();
     aud.volume = 0.85;
 
-    const pbBar    = document.getElementById('player-bar');
-    const pbPlay   = document.getElementById('pb-play');
-    const pbPrev   = document.getElementById('pb-prev');
-    const pbNext   = document.getElementById('pb-next');
-    const pbArt    = document.getElementById('pb-art');
-    const pbTitle  = document.getElementById('pb-title');
-    const pbAlbum  = document.getElementById('pb-album');
-    const pbCur    = document.getElementById('pb-cur');
-    const pbDur    = document.getElementById('pb-dur');
-    const pbFill   = document.getElementById('pb-fill');
-    const pbBarEl  = document.getElementById('pb-bar');
-    const pbVol    = document.getElementById('pb-vol');
+    // ── Player bar elements ────────────────────────────────────────
+    const pbBar   = document.getElementById('player-bar');
+    const pbPlay  = document.getElementById('pb-play');
+    const pbPrev  = document.getElementById('pb-prev');
+    const pbNext  = document.getElementById('pb-next');
+    const pbArt   = document.getElementById('pb-art');
+    const pbTitle = document.getElementById('pb-title');
+    const pbAlbum = document.getElementById('pb-album');
+    const pbCur   = document.getElementById('pb-cur');
+    const pbDur   = document.getElementById('pb-dur');
+    const pbFill  = document.getElementById('pb-fill');
+    const pbBarEl = document.getElementById('pb-bar');
+    const pbVol   = document.getElementById('pb-vol');
 
+    // ── Helpers ────────────────────────────────────────────────────
     function fmt(s) {
       if (!isFinite(s)) return '0:00';
       const m = Math.floor(s / 60), sec = Math.floor(s % 60);
@@ -466,50 +536,89 @@
 
     function normalizeTrack(track, index) {
       return {
-        id: track.id || String(index),
-        num: track.num || (track.track ? String(track.track).padStart(2, '0') : String(index + 1).padStart(2, '0')),
-        title: track.title || 'Untitled',
-        artist: track.artist || 'Vincent Cole',
-        album: track.album || 'The Cole Standard',
-        cover: track.cover || '',
-        audio: track.audioSrc || track.audio || '',
-        isLatest: !!track.isLatest,
-        type: track.type || 'Single'
+        id:       track.id || String(index),
+        num:      track.num || (track.track ? String(track.track).padStart(2, '0') : String(index + 1).padStart(2, '0')),
+        title:    track.title   || 'Untitled',
+        artist:   track.artist  || 'Vincent Cole',
+        album:    track.album   || 'The Cole Standard',
+        cover:    track.cover   || '',
+        audio:    track.audioSrc || track.audio || '',
+        isLatest: !!track.isLatest
       };
     }
 
-    function setLatest(track) {
-      document.getElementById('latest-title').textContent = track.title;
-      document.getElementById('latest-title-large').textContent = track.title;
-      document.getElementById('latest-artist').textContent = track.artist;
-      document.getElementById('latest-cover').src = track.cover;
-      document.getElementById('latest-cover').alt = track.title;
-
-      const latestPlay = document.getElementById('latest-play');
-      latestPlay.onclick = () => playTrack(TRACKS.indexOf(track));
-      latestPlay.disabled = !hasAudio(track);
+    // ── Group tracks by album (preserving order) ───────────────────
+    function groupByAlbum(tracks) {
+      const map = new Map();
+      tracks.forEach((track, globalIdx) => {
+        if (!map.has(track.album)) map.set(track.album, []);
+        map.get(track.album).push({ ...track, globalIdx });
+      });
+      return map;
     }
 
-    function renderTracks() {
-      const list = document.getElementById('track-list');
-      list.innerHTML = TRACKS.map((track, index) => `
-        <div class="track-row" data-track-index="${index}">
-          <img class="track-thumb" src="${track.cover}" alt="${track.title}">
-          <div class="track-info">
-            <span class="track-num">${track.num}</span>
-            <span class="track-name">${track.title}${track.isLatest ? ' <span style="font-size:0.65em;color:var(--gold);letter-spacing:0.12em;">NEW</span>' : ''}</span>
-          </div>
-          <button class="track-play-btn" aria-label="Play ${track.title}" ${hasAudio(track) ? '' : 'disabled'}>&#9654;</button>
-        </div>
-      `).join('');
+    // ── Render discography with song cover grids ───────────────────
+    function renderDiscography() {
+      const container = document.getElementById('discography-albums');
+      const albums = groupByAlbum(TRACKS);
+      let html = '';
 
-      document.querySelectorAll('.track-row').forEach(row => {
-        row.addEventListener('click', () => {
-          playTrack(Number(row.dataset.trackIndex));
-        });
+      albums.forEach((tracks, albumName) => {
+        const cfg = ALBUM_CONFIG[albumName] || {};
+        const albumCover = cfg.cover || (tracks[0] && tracks[0].cover) || '';
+        const trackCount = tracks.length;
+        const yearGenre = [cfg.year, cfg.genre].filter(Boolean).join(' · ');
+
+        html += `
+          <div class="album-block">
+            <div class="album-header-strip">
+              <img class="album-cover-sq" src="${albumCover}" alt="${albumName}">
+              <div class="album-header-text">
+                <span class="eyebrow">Album</span>
+                <h3 class="album-title">${albumName}</h3>
+                <p class="album-sub">${yearGenre}${yearGenre && trackCount ? ' · ' : ''}${trackCount} track${trackCount !== 1 ? 's' : ''}</p>
+              </div>
+            </div>
+            <div class="song-grid">
+              ${tracks.map(track => `
+                <div class="song-card" data-idx="${track.globalIdx}" title="Play ${track.title}">
+                  <div class="song-img-wrap">
+                    <img src="${track.cover || albumCover}" alt="${track.title}" loading="lazy">
+                    <div class="song-play-overlay">
+                      <div class="song-play-icon">&#9654;</div>
+                    </div>
+                  </div>
+                  <div class="song-card-num">Track ${track.num}</div>
+                  <div class="song-card-title">${track.title}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+
+      // Attach click handlers
+      container.querySelectorAll('.song-card').forEach(card => {
+        card.addEventListener('click', () => playTrack(Number(card.dataset.idx)));
       });
     }
 
+    // ── Set latest single display ──────────────────────────────────
+    function setLatest(track) {
+      document.getElementById('latest-title-top').textContent = track.title;
+      document.getElementById('latest-title-large').textContent = track.title;
+      document.getElementById('latest-artist').textContent = track.artist;
+      const img = document.getElementById('latest-cover');
+      img.src = track.cover; img.alt = track.title;
+
+      const btn = document.getElementById('latest-play');
+      btn.onclick = () => playTrack(TRACKS.indexOf(track));
+      btn.disabled = !hasAudio(track);
+    }
+
+    // ── Play a track ───────────────────────────────────────────────
     function playTrack(idx) {
       if (idx < 0 || idx >= TRACKS.length) return;
       const track = TRACKS[idx];
@@ -522,40 +631,48 @@
       pbArt.src = track.cover;
       pbBar.classList.add('visible');
 
-      document.querySelectorAll('.track-row').forEach(r => r.classList.remove('playing'));
-      const row = document.querySelector(`[data-track-index="${idx}"]`);
-      if (row) row.classList.add('playing');
+      // Update playing state on cards
+      document.querySelectorAll('.song-card').forEach(c => c.classList.remove('playing'));
+      const card = document.querySelector(`.song-card[data-idx="${idx}"]`);
+      if (card) {
+        card.classList.add('playing');
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
 
       aud.play();
       pbPlay.innerHTML = '&#10074;&#10074;';
     }
 
+    // ── Load data ──────────────────────────────────────────────────
     async function loadSongs() {
       try {
-        const response = await fetch('./songs.json?v=' + Date.now());
-        const rawTracks = await response.json();
-        TRACKS = rawTracks.map(normalizeTrack);
+        const res = await fetch('./songs.json?v=' + Date.now());
+        const raw = await res.json();
+        TRACKS = raw.map(normalizeTrack);
 
+        // Find latest: prefer isLatest flag, else last track
         const latest = TRACKS.find(t => t.isLatest) || TRACKS[TRACKS.length - 1];
-
         if (latest) setLatest(latest);
-        renderTracks();
-      } catch (error) {
-        console.error('Could not load songs.json', error);
-        document.getElementById('latest-title').textContent = 'Music catalog unavailable';
-        document.getElementById('track-list').innerHTML = '<p style="color:var(--silver)">Could not load songs.json.</p>';
+
+        renderDiscography();
+
+        // Wire hero play button to latest
+        document.getElementById('hero-play-btn').onclick = () => {
+          if (latest) playTrack(TRACKS.indexOf(latest));
+        };
+
+      } catch (err) {
+        console.error('Could not load songs.json', err);
+        document.getElementById('latest-title-top').textContent = 'Music catalog unavailable';
+        document.getElementById('discography-albums').innerHTML = '<p style="color:var(--silver)">Could not load songs.json.</p>';
       }
     }
 
+    // ── Player bar controls ────────────────────────────────────────
     pbPlay.addEventListener('click', () => {
       if (currentIdx < 0) return playTrack(0);
-      if (aud.paused) {
-        aud.play();
-        pbPlay.innerHTML = '&#10074;&#10074;';
-      } else {
-        aud.pause();
-        pbPlay.innerHTML = '&#9654;';
-      }
+      if (aud.paused) { aud.play(); pbPlay.innerHTML = '&#10074;&#10074;'; }
+      else            { aud.pause(); pbPlay.innerHTML = '&#9654;'; }
     });
 
     pbPrev.addEventListener('click', () => {
@@ -570,26 +687,21 @@
       }
     });
 
+    aud.addEventListener('ended', () => pbNext.click());
+
     aud.addEventListener('timeupdate', () => {
       pbCur.textContent = fmt(aud.currentTime);
       pbDur.textContent = fmt(aud.duration);
       pbFill.style.width = ((aud.currentTime / aud.duration) || 0) * 100 + '%';
     });
 
-    aud.addEventListener('ended', () => {
-      pbNext.click();
-    });
-
     pbBarEl.addEventListener('click', e => {
       const rect = pbBarEl.getBoundingClientRect();
-      if (isFinite(aud.duration)) {
+      if (isFinite(aud.duration))
         aud.currentTime = ((e.clientX - rect.left) / rect.width) * aud.duration;
-      }
     });
 
-    pbVol.addEventListener('input', e => {
-      aud.volume = e.target.value;
-    });
+    pbVol.addEventListener('input', e => { aud.volume = e.target.value; });
 
     window.addEventListener('scroll', () => {
       document.getElementById('topnav').classList.toggle('scrolled', window.scrollY > 50);
