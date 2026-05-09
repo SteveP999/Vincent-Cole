@@ -1,49 +1,83 @@
 {
   "artist": "Vincent Cole",
-  "latestUrl": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/latest.json",
+  "latestUrl": "latest.json",
   "featuredTrack": {
     "title": "Just Watch Me Walk Away",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
-    "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-just-watch-me-walk-away-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1"
+    "cover": "images/covers/vincent-cole-just-watch-me-walk-away-cover.png",
+    "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1",
+    "videos": []
   },
   "tracks": [
     {
       "title": "Too Late To Behave",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-too-late-to-behave-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/wvym3juow40a76gor19hu/vincent-cole-too-late-to-behave-mp3.mp3?rlkey=2gu6hybeu8y49mwdqoea71yhv&raw=1"
+      "cover": "images/covers/vincent-cole-too-late-to-behave-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/wvym3juow40a76gor19hu/vincent-cole-too-late-to-behave-mp3.mp3?rlkey=2gu6hybeu8y49mwdqoea71yhv&raw=1",
+      "videos": []
     },
     {
       "title": "Last Call for Beautiful",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-last-call-for-beautiful-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/vincent-cole-last-call-for-beautiful-mp3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1"
+      "cover": "images/covers/vincent-cole-last-call-for-beautiful-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/vincent-cole-last-call-for-beautiful-mp3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1",
+      "videos": [
+        {
+          "title": "Official Video",
+          "youtube": "https://youtu.be/ZFJsBPMDdR0"
+        }
+      ]
     },
     {
       "title": "Trouble in a Black Dress",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-trouble-in-a-black-dress-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1"
+      "cover": "images/covers/vincent-cole-trouble-in-a-black-dress-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1",
+      "videos": []
     },
     {
       "title": "Slow on My Lips",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-slow-on-my-lips-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/lq899f1r95gdgqlhpbdq6/vincent-cole-slow-on-my-lips-mp3-v1.mp3?rlkey=ek8p2mx0x1w3ayxqkie0bix9c&raw=1"
+      "cover": "images/covers/vincent-cole-slow-on-my-lips-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/lq899f1r95gdgqlhpbdq6/vincent-cole-slow-on-my-lips-mp3-v1.mp3?rlkey=ek8p2mx0x1w3ayxqkie0bix9c&raw=1",
+      "videos": []
     },
     {
       "title": "The Last Song",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-the-last-song-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/mzrz0htmnr3rpkof2sadg/vincent-cole-the-last-song-mp3-v1.mp3?rlkey=vhgd3bjde2k1qli8lkmk07iq3&raw=1"
+      "cover": "images/covers/vincent-cole-the-last-song-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/mzrz0htmnr3rpkof2sadg/vincent-cole-the-last-song-mp3-v1.mp3?rlkey=vhgd3bjde2k1qli8lkmk07iq3&raw=1",
+      "videos": []
     },
     {
       "title": "If Tonight Would Never End",
+      "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/covers/vincent-cole-if-tonight-would-never-end-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/24kj8kf367r8q0xgeji62/vincent-cole-if-tonight-would-never-end-mp3.mp3?rlkey=hhbv46uxi693qxiwdhb7bhxjz&raw=1"
+      "cover": "images/covers/vincent-cole-if-tonight-would-never-end-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/24kj8kf367r8q0xgeji62/vincent-cole-if-tonight-would-never-end-mp3.mp3?rlkey=hhbv46uxi693qxiwdhb7bhxjz&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Just Watch Me Walk Away",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-just-watch-me-walk-away-cover.png",
+      "albumCover": "images/covers/vincent-cole-the-cole-standard-ALBUM-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1",
+      "videos": []
     }
   ]
 }
