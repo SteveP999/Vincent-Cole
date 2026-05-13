@@ -24,7 +24,13 @@
       "album": "The Cole Standard",
       "cover": "https://raw.githubusercontent.com/SteveP999/Vincent-Cole/main/images/covers/vincent-cole-last-call-for-beautiful-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/vincent-cole-last-call-for-beautiful-mp3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1",
-      "videos": []
+      "videos": [
+        {
+          "title": "Last Call for Beautiful",
+          "youtube": "https://youtu.be/ZFJsBPMDdR0",
+          "order": 1
+        }
+      ]
     },
     {
       "title": "Trouble in a Black Dress",
