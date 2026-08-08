@@ -27,6 +27,14 @@
       "videos": []
     },
     {
+      "title": "What We Don't Say",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-what-we-dont-say-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/kcrrxns9bdzt89wabpnk3/vincent-cole-what-we-dont-say-MP3.mp3?rlkey=pggwz9cfebtp3xsyomx2bs0sl&raw=1",
+      "videos": []
+    },
+    {
       "title": "Last Call for Beautiful",
       "artist": "Vincent Cole",
       "album": "The Cole Standard",
@@ -86,14 +94,6 @@
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-the-last-song-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/mzrz0htmnr3rpkof2sadg/vincent-cole-the-last-song-mp3-v1.mp3?rlkey=vhgd3bjde2k1qli8lkmk07iq3&raw=1",
-      "videos": []
-    },
-    {
-      "title": "What We Don't Say",
-      "artist": "Vincent Cole",
-      "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-what-we-dont-say-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/kcrrxns9bdzt89wabpnk3/vincent-cole-what-we-dont-say-MP3.mp3?rlkey=pggwz9cfebtp3xsyomx2bs0sl&raw=1",
       "videos": []
     }
   ]
