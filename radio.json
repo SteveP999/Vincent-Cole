@@ -49,19 +49,19 @@
       ]
     },
     {
-      "title": "Slow on My Lips",
-      "artist": "Vincent Cole",
-      "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-slow-on-my-lips-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/lq899f1r95gdgqlhpbdq6/vincent-cole-slow-on-my-lips-mp3-v1.mp3?rlkey=ek8p2mx0x1w3ayxqkie0bix9c&raw=1",
-      "videos": []
-    },
-    {
       "title": "Trouble in a Black Dress",
       "artist": "Vincent Cole",
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-trouble-in-a-black-dress-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Slow on My Lips",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-slow-on-my-lips-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/lq899f1r95gdgqlhpbdq6/vincent-cole-slow-on-my-lips-mp3-v1.mp3?rlkey=ek8p2mx0x1w3ayxqkie0bix9c&raw=1",
       "videos": []
     },
     {
@@ -78,6 +78,14 @@
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-if-tonight-would-never-end-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/24kj8kf367r8q0xgeji62/vincent-cole-if-tonight-would-never-end-mp3.mp3?rlkey=hhbv46uxi693qxiwdhb7bhxjz&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Make it Look Easy",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-make-it-look-easy-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/wt1b4udmwtykvsk9d17r8/vincent-cole-make-it-look-easy-mp3.mp3?rlkey=wl6uqt78sxrbat8khd036i50a&raw=1",
       "videos": []
     },
     {
@@ -102,14 +110,6 @@
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-the-last-song-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/mzrz0htmnr3rpkof2sadg/vincent-cole-the-last-song-mp3-v1.mp3?rlkey=vhgd3bjde2k1qli8lkmk07iq3&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Make it Look Easy",
-      "artist": "Vincent Cole",
-      "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-make-it-look-easy-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/wt1b4udmwtykvsk9d17r8/vincent-cole-make-it-look-easy-mp3.mp3?rlkey=wl6uqt78sxrbat8khd036i50a&raw=1",
       "videos": []
     }
   ]
