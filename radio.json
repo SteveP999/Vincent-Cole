@@ -2,14 +2,22 @@
   "artist": "Vincent Cole",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Let Them Talk",
+    "title": "Right Where I Belong (Live)",
     "artist": "Vincent Cole",
-    "album": "The Cole Standard",
-    "cover": "images/covers/vincent-cole-let-them-talk-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/9lwkbsr9rgzi9qi741em5/vincent-cole-let-them-talk-mp3.mp3?rlkey=gvvdhb2ffx089jxcrydc2lgj4&raw=1",
+    "album": "Live From The Magnolia",
+    "cover": "images/covers/vincent-cole-right-where-i-belong-live-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/n2rup1fmg46csaxfwbmu4/vincent-cole-right-where-i-belong-live-from-the-magnolia-MP3.mp3?rlkey=0upgwlzeawraxegkcsx0fw5q6&raw=1",
     "videos": []
   },
   "tracks": [
+    {
+      "title": "Right Where I Belong (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live From The Magnolia",
+      "cover": "images/covers/vincent-cole-right-where-i-belong-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/n2rup1fmg46csaxfwbmu4/vincent-cole-right-where-i-belong-live-from-the-magnolia-MP3.mp3?rlkey=0upgwlzeawraxegkcsx0fw5q6&raw=1",
+      "videos": []
+    },
     {
       "title": "Right Where I Belong",
       "artist": "Vincent Cole",
