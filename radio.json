@@ -2,11 +2,11 @@
   "artist": "Vincent Cole",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Right Where I Belong (Live)",
+    "title": "Let The Good Times Find Us (Live)",
     "artist": "Vincent Cole",
-    "album": "Live From The Magnolia",
-    "cover": "images/covers/vincent-cole-right-where-i-belong-live-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/n2rup1fmg46csaxfwbmu4/vincent-cole-right-where-i-belong-live-from-the-magnolia-MP3.mp3?rlkey=0upgwlzeawraxegkcsx0fw5q6&raw=1",
+    "album": "Live from the Magnolia",
+    "cover": "images/covers/vincent-cole-let-the-good-times-find-us-live-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/4911yomhdz3ggrskl9zta/vincent-cole-live-from-the-magnolia-14-let-the-good-times-find-us-MP3.mp3?rlkey=oxz2wnn06yydy2re38v88a7uq&raw=1",
     "videos": []
   },
   "tracks": [
@@ -16,6 +16,118 @@
       "album": "Live From The Magnolia",
       "cover": "images/covers/vincent-cole-right-where-i-belong-live-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/n2rup1fmg46csaxfwbmu4/vincent-cole-right-where-i-belong-live-from-the-magnolia-MP3.mp3?rlkey=0upgwlzeawraxegkcsx0fw5q6&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Buy the Moon Another Round (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-buy-the-moon-another-round-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/0mq0arrvcsz82hytwv390/vincent-cole-live-from-the-magnolia-13-buy-the-moon-another-round-MP3.mp3?rlkey=drkdkpm7a2tt53gsj1l6yz05d&raw=1",
+      "videos": []
+    },
+    {
+      "title": "If Tonight Would Never End (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-if-tonight-would-never-end-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/yrksqmr6b3fuazfrmf2vy/vincent-cole-live-from-the-magnolia-07-if-tonight-would-never-end-MP3.mp3?rlkey=kx8ltl3pcbpmpoimpulex5kl2&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Just One More Dance (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-just-one-more-dance-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/w2lqnjd2c9mdfsopw769z/vincent-cole-live-from-the-magnolia-05-just-one-more-dance-MP3.mp3?rlkey=kr0h1mrd0jr775e820men8c01&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Just Watch Me Walk Away (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-just-watch-me-walk-away-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/1b2zbhikuoc0k312imqiw/vincent-cole-live-from-the-magnolia-10-just-watch-me-walk-away-MP3.mp3?rlkey=ntm7qlx2p9gzyyinm0e1mjng4&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Let The Good Times Find Us (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-let-the-good-times-find-us-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/4911yomhdz3ggrskl9zta/vincent-cole-live-from-the-magnolia-14-let-the-good-times-find-us-MP3.mp3?rlkey=oxz2wnn06yydy2re38v88a7uq&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Let Them Talk (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-let-them-talk-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/khs9r6wtazztajvh1e59u/vincent-cole-live-from-the-magnolia-06-let-them-talk-MP3.mp3?rlkey=bxc6mhi8q0mxxlzawenlbkr9h&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Loast Call for Beautiful (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-loast-call-for-beautiful-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/viqf2hcy1d2azfnb0q2wl/vincent-cole-live-from-the-magnolia-11-last-call-for-beautiful-MP3.mp3?rlkey=vt50xd7t4mkowgftu32fqj7ga&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Make It Look Easy (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-make-it-look-easy-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/49oc8lkto1ac8t0sy9st3/vincent-cole-live-from-the-magnolia-08-make-it-look-easy-MP3.mp3?rlkey=ym6fkmephdg1v823eo6fk8fqd&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Slow on My Lips (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-slow-on-my-lips-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/bz8rsjuowh43vsihikzcq/vincent-cole-live-from-the-magnolia-09-slow-on-my-lips-MP3.mp3?rlkey=t9z3rv0sjccqd6amgs01wojd7&raw=1",
+      "videos": []
+    },
+    {
+      "title": "The Last Song (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-the-last-song-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/txvmf6c2q3az4leo82lzl/vincent-cole-live-from-the-magnolia-12-the-last-song-MP3.mp3?rlkey=ti6j3csqul4qqn1spru4hp8ei&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Too Late to Behave (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-too-late-to-behave-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/nk9vacq8b7liouutf1kgo/vincent-cole-live-from-the-magnolia-04-too-late-to-behave-MP3.mp3?rlkey=g9o5dxx8il0zwbkhazaaa7vmo&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Trouble in a Black Dress (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-trouble-in-a-black-dress-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/203xvbfpx554czzfylbkf/vincent-cole-trouble-in-a-black-dress-live-from-the-magnolia-MP3.mp3?rlkey=c7uonko5hf4y1a1cq2refe92c&raw=1",
+      "videos": []
+    },
+    {
+      "title": "What We Don't Say (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-what-we-dont-say-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/slhs6tp0s9hnntjyl4zye/vincent-cole-live-from-the-magnolia-03-what-we-dont-say-MP3.mp3?rlkey=cfxhhdeyeznyomj7yi0y6ll37&raw=1",
+      "videos": []
+    },
+    {
+      "title": "What We Don't Way (Live)",
+      "artist": "Vincent Cole",
+      "album": "Live from the Magnolia",
+      "cover": "images/covers/vincent-cole-what-we-dont-way-live-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/slhs6tp0s9hnntjyl4zye/vincent-cole-live-from-the-magnolia-03-what-we-dont-say-MP3.mp3?rlkey=cfxhhdeyeznyomj7yi0y6ll37&raw=1",
       "videos": []
     },
     {
