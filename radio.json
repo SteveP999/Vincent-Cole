@@ -161,14 +161,6 @@
       ]
     },
     {
-      "title": "Trouble in a Black Dress",
-      "artist": "Vincent Cole",
-      "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-trouble-in-a-black-dress-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1",
-      "videos": []
-    },
-    {
       "title": "Slow on My Lips",
       "artist": "Vincent Cole",
       "album": "The Cole Standard",
@@ -177,11 +169,11 @@
       "videos": []
     },
     {
-      "title": "Let Them Talk",
+      "title": "Trouble in a Black Dress",
       "artist": "Vincent Cole",
       "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-let-them-talk-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/9lwkbsr9rgzi9qi741em5/vincent-cole-let-them-talk-mp3.mp3?rlkey=gvvdhb2ffx089jxcrydc2lgj4&raw=1",
+      "cover": "images/covers/vincent-cole-trouble-in-a-black-dress-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/tq3gnmf9kxy2ny7ruxsyq/vincent-cole-trouble-in-a-black-dress-mp3.mp3?rlkey=9injlc1hrfrs17bv2nen79ied&raw=1",
       "videos": []
     },
     {
@@ -190,14 +182,6 @@
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-if-tonight-would-never-end-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/24kj8kf367r8q0xgeji62/vincent-cole-if-tonight-would-never-end-mp3.mp3?rlkey=hhbv46uxi693qxiwdhb7bhxjz&raw=1",
-      "videos": []
-    },
-    {
-      "title": "Make it Look Easy",
-      "artist": "Vincent Cole",
-      "album": "The Cole Standard",
-      "cover": "images/covers/vincent-cole-make-it-look-easy-cover.png",
-      "audioSrc": "https://www.dropbox.com/scl/fi/wt1b4udmwtykvsk9d17r8/vincent-cole-make-it-look-easy-mp3.mp3?rlkey=wl6uqt78sxrbat8khd036i50a&raw=1",
       "videos": []
     },
     {
@@ -214,6 +198,22 @@
       "album": "The Cole Standard",
       "cover": "images/covers/vincent-cole-just-watch-me-walk-away-cover.png",
       "audioSrc": "https://www.dropbox.com/scl/fi/gt5fe1l7mrp49u5jszvbi/vincent-cole-just-watch-me-walk-away-mp3-v4.mp3?rlkey=zooi7gl31kvkj0g3qts950ouw&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Let Them Talk",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-let-them-talk-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/9lwkbsr9rgzi9qi741em5/vincent-cole-let-them-talk-mp3.mp3?rlkey=gvvdhb2ffx089jxcrydc2lgj4&raw=1",
+      "videos": []
+    },
+    {
+      "title": "Make it Look Easy",
+      "artist": "Vincent Cole",
+      "album": "The Cole Standard",
+      "cover": "images/covers/vincent-cole-make-it-look-easy-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/wt1b4udmwtykvsk9d17r8/vincent-cole-make-it-look-easy-mp3.mp3?rlkey=wl6uqt78sxrbat8khd036i50a&raw=1",
       "videos": []
     },
     {
