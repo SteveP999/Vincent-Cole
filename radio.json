@@ -11,6 +11,14 @@
   },
   "tracks": [
     {
+      "title": "Let the Good Times Find Us",
+      "artist": "Vincent Cole",
+      "album": "Another Round",
+      "cover": "images/covers/vincent-cole-let-the-good-times-find-us-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/sadcpuefmo61clvipvo2y/Let-the-Good-Times-Find-Us-Vincent-Cole-mastered.mp3?rlkey=pcu09phed1z6oivhvb1sx4ci9&raw=1",
+      "videos": []
+    },
+    {
       "title": "Right Where I Belong (Live)",
       "artist": "Vincent Cole",
       "album": "Live From The Magnolia",
