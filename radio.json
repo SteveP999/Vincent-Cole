@@ -2,7 +2,7 @@
   "artist": "Vincent Cole",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Good Luck Goodbye",
+    "title": "Good Luck Goodbye (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
     "cover": "images/covers/vincent-cole-good-luck-goodbye-cover.png",
@@ -99,7 +99,7 @@
       "videos": []
     },
     {
-      "title": "Good Luck Goodbye",
+      "title": "Good Luck Goodbye (Live)",
       "artist": "Vincent Cole",
       "album": "Live From The Magnolia",
       "cover": "images/covers/vincent-cole-good-luck-goodbye-cover.png",
