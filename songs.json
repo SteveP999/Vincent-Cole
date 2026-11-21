@@ -65,7 +65,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/ox1u80xxhb1ka9035s3fy/vincent-cole-live-from-the-magnilia-01-right-where-i-belong-MP3.mp3?rlkey=qfut7hya4mv5p0yjmrqeujjyq&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -86,7 +86,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/203xvbfpx554czzfylbkf/vincent-cole-trouble-in-a-black-dress-live-from-the-magnolia-MP3.mp3?rlkey=c7uonko5hf4y1a1cq2refe92c&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -107,7 +107,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/slhs6tp0s9hnntjyl4zye/vincent-cole-live-from-the-magnolia-03-what-we-dont-say-MP3.mp3?rlkey=cfxhhdeyeznyomj7yi0y6ll37&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -128,7 +128,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/nk9vacq8b7liouutf1kgo/vincent-cole-live-from-the-magnolia-04-too-late-to-behave-MP3.mp3?rlkey=g9o5dxx8il0zwbkhazaaa7vmo&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -149,7 +149,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/w2lqnjd2c9mdfsopw769z/vincent-cole-live-from-the-magnolia-05-just-one-more-dance-MP3.mp3?rlkey=kr0h1mrd0jr775e820men8c01&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -170,7 +170,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/khs9r6wtazztajvh1e59u/vincent-cole-live-from-the-magnolia-06-let-them-talk-MP3.mp3?rlkey=bxc6mhi8q0mxxlzawenlbkr9h&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -191,7 +191,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/yrksqmr6b3fuazfrmf2vy/vincent-cole-live-from-the-magnolia-07-if-tonight-would-never-end-MP3.mp3?rlkey=kx8ltl3pcbpmpoimpulex5kl2&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -212,7 +212,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/cudpfiyz87j4xw0fsfvh4/vincent-cole-live-from-the-magnolia-08-make-it-look-easy-MP3.mp3?rlkey=w4824snv74uh6u9ygt4ksv5we&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -233,7 +233,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/bz8rsjuowh43vsihikzcq/vincent-cole-live-from-the-magnolia-09-slow-on-my-lips-MP3.mp3?rlkey=t9z3rv0sjccqd6amgs01wojd7&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -254,7 +254,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/fkebrdg5sql4upo1fj34i/vincent-cole-live-from-the-magnolia-10-just-watch-me-walk-away-MP3.mp3?rlkey=0h9qfg4cejul1wqtmnb2i0i8y&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -275,7 +275,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/viqf2hcy1d2azfnb0q2wl/vincent-cole-live-from-the-magnolia-11-last-call-for-beautiful-MP3.mp3?rlkey=vt50xd7t4mkowgftu32fqj7ga&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -290,13 +290,13 @@
     "albumOrder": 12,
     "albumCover": "images/covers/vincent-cole-live-from-the-magnolia-ALBUM-cover.png",
     "type": "single",
-    "isLatest": true,
+    "isLatest": false,
     "cover": "images/covers/vincent-cole-good-luck-goodbye-cover.png",
     "audio": "https://www.dropbox.com/scl/fi/yp02j90p9ya7onbghny9w/vincent-cole-live-from-the-magnolia-11-goodbye-mixed-mastered.mp3?rlkey=tarsyfctoz8jkem6j7ilxv1z9&raw=1",
     "audioSrc": "https://www.dropbox.com/scl/fi/yp02j90p9ya7onbghny9w/vincent-cole-live-from-the-magnolia-11-goodbye-mixed-mastered.mp3?rlkey=tarsyfctoz8jkem6j7ilxv1z9&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {
@@ -321,7 +321,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/txvmf6c2q3az4leo82lzl/vincent-cole-live-from-the-magnolia-12-the-last-song-MP3.mp3?rlkey=ti6j3csqul4qqn1spru4hp8ei&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -342,7 +342,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/0mq0arrvcsz82hytwv390/vincent-cole-live-from-the-magnolia-13-buy-the-moon-another-round-MP3.mp3?rlkey=drkdkpm7a2tt53gsj1l6yz05d&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {
@@ -367,7 +367,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/4911yomhdz3ggrskl9zta/vincent-cole-live-from-the-magnolia-14-let-the-good-times-find-us-MP3.mp3?rlkey=oxz2wnn06yydy2re38v88a7uq&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {
@@ -392,7 +392,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/gqwx1e5bxcatq8i9fuod7/vincent-cole-right-where-i-belong-mp3.mp3?rlkey=1otml0hdla25eae7cb1pzn8tl&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -434,7 +434,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/kcrrxns9bdzt89wabpnk3/vincent-cole-what-we-dont-say-MP3.mp3?rlkey=pggwz9cfebtp3xsyomx2bs0sl&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -545,7 +545,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/88vhf1hu2lpfwtzh20n5o/vincent-cole-just-one-more-dance-mp3.mp3?rlkey=h1s3sjy2csbmdcvooq72d6mth&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -587,7 +587,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/9lwkbsr9rgzi9qi741em5/vincent-cole-let-them-talk-mp3.mp3?rlkey=gvvdhb2ffx089jxcrydc2lgj4&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -608,7 +608,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/wt1b4udmwtykvsk9d17r8/vincent-cole-make-it-look-easy-mp3.mp3?rlkey=wl6uqt78sxrbat8khd036i50a&raw=1",
     "videos": [],
     "includeOnRadio": true,
-    "includeOnHomepage": true,
+    "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
     "streaming": {}
@@ -630,6 +630,27 @@
     "videos": [],
     "includeOnRadio": true,
     "includeOnHomepage": false,
+    "explicit": false,
+    "tags": [],
+    "streaming": {}
+  },
+  {
+    "id": "vincent-cole-i-could-get-used-to-here",
+    "num": "03",
+    "title": "I Could Get Used to Here",
+    "artist": "Vincent Cole",
+    "album": "Another Round",
+    "trackNumber": 3,
+    "albumOrder": 3,
+    "albumCover": "",
+    "type": "single",
+    "isLatest": true,
+    "cover": "images/covers/vincent-cole-i-could-get-used-to-here-cover.vincent-cole-I-could-get-used-to-here-COVER",
+    "audio": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
+    "audioSrc": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
+    "videos": [],
+    "includeOnRadio": false,
+    "includeOnHomepage": true,
     "explicit": false,
     "tags": [],
     "streaming": {}
