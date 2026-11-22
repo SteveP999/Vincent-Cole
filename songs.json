@@ -30,8 +30,8 @@
     "title": "Let the Good Times Find Us",
     "artist": "Vincent Cole",
     "album": "Another Round",
-    "trackNumber": 1,
-    "albumOrder": 1,
+    "trackNumber": 2,
+    "albumOrder": 2,
     "albumCover": "images/covers/vincent-cole-another-round-album-cover.png",
     "type": "single",
     "isLatest": false,
@@ -50,8 +50,29 @@
     }
   },
   {
-    "id": "vincent-cole-right-where-i-belong-live",
+    "id": "vincent-cole-i-could-get-used-to-here",
     "num": "03",
+    "title": "I Could Get Used to Here",
+    "artist": "Vincent Cole",
+    "album": "Another Round",
+    "trackNumber": 3,
+    "albumOrder": 3,
+    "albumCover": "images/covers/vincent-cole-another-round-ALBUM-cover.png",
+    "type": "single",
+    "isLatest": true,
+    "cover": "images/covers/vincent-cole-i-could-get-used-to-here-cover.png",
+    "audio": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
+    "audioSrc": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
+    "videos": [],
+    "includeOnRadio": false,
+    "includeOnHomepage": true,
+    "explicit": false,
+    "tags": [],
+    "streaming": {}
+  },
+  {
+    "id": "vincent-cole-right-where-i-belong-live",
+    "num": "04",
     "title": "Right Where I Belong (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -68,11 +89,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-trouble-in-a-black-dress-live",
-    "num": "04",
+    "num": "05",
     "title": "Trouble in a Black Dress (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -89,11 +114,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-what-we-dont-say-live",
-    "num": "05",
+    "num": "06",
     "title": "What We Don't Say (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -110,11 +139,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-too-late-to-behave-live",
-    "num": "06",
+    "num": "07",
     "title": "Too Late to Behave (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -131,11 +164,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-just-one-more-dance-live",
-    "num": "07",
+    "num": "08",
     "title": "Just One More Dance (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -152,11 +189,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-let-them-talk-live",
-    "num": "08",
+    "num": "09",
     "title": "Let Them Talk (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -173,11 +214,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-if-tonight-would-never-end-live",
-    "num": "09",
+    "num": "10",
     "title": "If Tonight Would Never End (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -194,11 +239,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-make-it-look-easy-live",
-    "num": "10",
+    "num": "11",
     "title": "Make It Look Easy (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -215,11 +264,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-slow-on-my-lips-live",
-    "num": "11",
+    "num": "12",
     "title": "Slow on My Lips (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -236,11 +289,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-just-watch-me-walk-away-live",
-    "num": "12",
+    "num": "13",
     "title": "Just Watch Me Walk Away (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -257,11 +314,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-loast-call-for-beautiful-live",
-    "num": "13",
+    "num": "14",
     "title": "Last Call for Beautiful (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -278,11 +339,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-good-luck-goodbye",
-    "num": "14",
+    "num": "15",
     "title": "Good Luck Goodbye (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -307,7 +372,7 @@
   },
   {
     "id": "vincent-cole-the-last-song-live",
-    "num": "15",
+    "num": "16",
     "title": "The Last Song (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -324,11 +389,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-buy-the-moon-another-round-live",
-    "num": "16",
+    "num": "17",
     "title": "Buy the Moon Another Round (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -353,7 +422,7 @@
   },
   {
     "id": "vincent-cole-let-the-good-times-find-us-live",
-    "num": "17",
+    "num": "18",
     "title": "Let The Good Times Find Us (Live)",
     "artist": "Vincent Cole",
     "album": "Live From The Magnolia",
@@ -378,7 +447,7 @@
   },
   {
     "id": "vincent-cole-right-where-i-belong",
-    "num": "18",
+    "num": "19",
     "title": "Right Where I Belong",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -395,11 +464,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "too_late_to_behave",
-    "num": "19",
+    "num": "20",
     "title": "Too Late To Behave",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -420,7 +493,7 @@
   },
   {
     "id": "vincent-cole-what-we-dont-say",
-    "num": "20",
+    "num": "21",
     "title": "What We Don't Say",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -437,11 +510,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "last_call_for_beautiful",
-    "num": "21",
+    "num": "22",
     "title": "Last Call for Beautiful",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -455,7 +532,7 @@
     "audioSrc": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/vincent-cole-last-call-for-beautiful-mp3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1",
     "videos": [
       {
-        "youtube": "https://youtu.be/ZFJsBPMDdR0",
+        "youtube": "https://youtu.be/ZFJsBPMDdR0?si=q5LLugVD6hBoMoUq",
         "title": "Official Video",
         "order": 1
       }
@@ -464,11 +541,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "slow_on_my_lips",
-    "num": "22",
+    "num": "23",
     "title": "Slow on My Lips",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -489,7 +570,7 @@
   },
   {
     "id": "trouble_in_a_black_dress",
-    "num": "23",
+    "num": "24",
     "title": "Trouble in a Black Dress",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -510,7 +591,7 @@
   },
   {
     "id": "if_tonight_would_never_end",
-    "num": "24",
+    "num": "25",
     "title": "If Tonight Would Never End",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -531,7 +612,7 @@
   },
   {
     "id": "vincent-cole-just-one-more-dance",
-    "num": "25",
+    "num": "26",
     "title": "Just One More Dance",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -548,11 +629,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "just_watch_me_walk_away",
-    "num": "26",
+    "num": "27",
     "title": "Just Watch Me Walk Away",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -573,7 +658,7 @@
   },
   {
     "id": "vincent-cole-let-them-talk",
-    "num": "27",
+    "num": "28",
     "title": "Let Them Talk",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -590,11 +675,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "vincent-cole-make-it-look-easy",
-    "num": "28",
+    "num": "29",
     "title": "Make it Look Easy",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -611,11 +700,15 @@
     "includeOnHomepage": false,
     "explicit": false,
     "tags": [],
-    "streaming": {}
+    "streaming": {
+      "spotify": "",
+      "apple": "",
+      "youtubeMusic": ""
+    }
   },
   {
     "id": "the_last_song",
-    "num": "29",
+    "num": "30",
     "title": "The Last Song",
     "artist": "Vincent Cole",
     "album": "The Cole Standard",
@@ -630,27 +723,6 @@
     "videos": [],
     "includeOnRadio": true,
     "includeOnHomepage": false,
-    "explicit": false,
-    "tags": [],
-    "streaming": {}
-  },
-  {
-    "id": "vincent-cole-i-could-get-used-to-here",
-    "num": "03",
-    "title": "I Could Get Used to Here",
-    "artist": "Vincent Cole",
-    "album": "Another Round",
-    "trackNumber": 3,
-    "albumOrder": 3,
-    "albumCover": "",
-    "type": "single",
-    "isLatest": true,
-    "cover": "images/covers/vincent-cole-i-could-get-used-to-here-cover.vincent-cole-I-could-get-used-to-here-COVER",
-    "audio": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
-    "audioSrc": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
-    "videos": [],
-    "includeOnRadio": false,
-    "includeOnHomepage": true,
     "explicit": false,
     "tags": [],
     "streaming": {}

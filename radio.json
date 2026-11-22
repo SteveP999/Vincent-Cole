@@ -2,14 +2,22 @@
   "artist": "Vincent Cole",
   "latestUrl": "latest.json",
   "featuredTrack": {
-    "title": "Good Luck Goodbye (Live)",
+    "title": "I Could Get Used to Here",
     "artist": "Vincent Cole",
-    "album": "Live From The Magnolia",
-    "cover": "images/covers/vincent-cole-good-luck-goodbye-cover.png",
-    "audioSrc": "https://www.dropbox.com/scl/fi/yp02j90p9ya7onbghny9w/vincent-cole-live-from-the-magnolia-11-goodbye-mixed-mastered.mp3?rlkey=tarsyfctoz8jkem6j7ilxv1z9&raw=1",
+    "album": "Another Round",
+    "cover": "images/covers/vincent-cole-i-could-get-used-to-here-cover.png",
+    "audioSrc": "https://www.dropbox.com/scl/fi/8kxthdayziyqlksgwwu8e/vincent-cole-i-could-get-used-to-here-MP3-mastered.mp3?rlkey=btodgfrsjs776o3iui7muozsw&raw=1",
     "videos": []
   },
   "tracks": [
+    {
+      "title": "Buy the Moon Another Round",
+      "artist": "Vincent Cole",
+      "album": "Another Round",
+      "cover": "images/covers/vincent-cole-buy-the-moon-another-round-cover.png",
+      "audioSrc": "https://www.dropbox.com/scl/fi/x8ds24yuu3bware1uogdg/Buy-the-Moon-Another-Round-MP3-mastered.mp3?rlkey=tji79kqyjdcik1re18o7thmiy&raw=1",
+      "videos": []
+    },
     {
       "title": "Let the Good Times Find Us",
       "artist": "Vincent Cole",
@@ -170,7 +178,7 @@
       "audioSrc": "https://www.dropbox.com/scl/fi/obev4v5cr4av6isho61k2/vincent-cole-last-call-for-beautiful-mp3.wav?rlkey=c67exv0ec4y1ska8eew8fagn3&raw=1",
       "videos": [
         {
-          "youtube": "https://youtu.be/ZFJsBPMDdR0",
+          "youtube": "https://youtu.be/ZFJsBPMDdR0?si=q5LLugVD6hBoMoUq",
           "title": "Official Video",
           "order": 1
         }
